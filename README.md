@@ -2,6 +2,20 @@
 
 Project untuk menyelsaikan skill test web developer - Bisnis Indonesia
 
+## Hasil
+![image](https://github.com/gozali97/ticketing-app/assets/58220137/0999a89d-1f8f-4687-b71c-490f685520b0)
+![image](https://github.com/gozali97/ticketing-app/assets/58220137/21b4e89b-9071-4d42-b698-0cad3b2ae398)
+![image](https://github.com/gozali97/ticketing-app/assets/58220137/af37281e-368a-44fb-bfdd-f8b1ce6a8c94)
+![image](https://github.com/gozali97/ticketing-app/assets/58220137/8f827984-9a5e-4586-8aa9-bcef29172d41)
+![image](https://github.com/gozali97/ticketing-app/assets/58220137/e6a4e37a-34c4-42d4-9fe6-b3fce8c38c13)
+![image](https://github.com/gozali97/ticketing-app/assets/58220137/ecd22933-9bbd-4265-9734-fc500a6bc241)
+![image](https://github.com/gozali97/ticketing-app/assets/58220137/57578293-24df-4dac-bfe0-abdcb6774908)
+![image](https://github.com/gozali97/ticketing-app/assets/58220137/62601007-9517-4f44-8eba-195428276dd6)
+![image](https://github.com/gozali97/ticketing-app/assets/58220137/74284a9e-3dd0-47eb-9017-e2897c70a9bb)
+![image](https://github.com/gozali97/ticketing-app/assets/58220137/b96fdd54-3332-4d36-bd3d-39b9a57da636)
+![image](https://github.com/gozali97/ticketing-app/assets/58220137/374a5fe7-15fd-4804-8917-9158a8768a69)
+
+
 ## Url WEB
 - localhost:8000/admin/login
 
