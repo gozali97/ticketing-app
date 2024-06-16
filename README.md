@@ -1,6 +1,6 @@
-# Technical Test
+# Skill Test WEB Developer
 
-Project untuk menyelsaikan technical test interview
+Project untuk menyelsaikan skill test web developer - Bisnis Indonesia
 
 ## Url WEB
 - localhost:8000/admin/login
