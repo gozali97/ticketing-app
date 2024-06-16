@@ -11,4 +11,9 @@ class Transaksi extends Model
 
     protected $guarded = ['id'];
 
+    public function ticket()
+    {
+        return $this->belongsTo(Ticket::class, 'ticket_id');
+    }
+
 }

@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('transaksis', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('event_id')->constrained('events')->onDelete('cascade')->onUpdate('cascade');
             $table->foreignId('ticket_id')->constrained('tickets')->onDelete('cascade')->onUpdate('cascade');
             $table->bigInteger('harga');
             $table->integer('jumlah');
@@ -21,6 +20,7 @@ return new class extends Migration
             $table->string('nama');
             $table->string('email');
             $table->string('telepon', 15);
+            $table->enum('status', ['New', 'Payment', 'Done'])->default('New');
             $table->timestamps();
         });
     }
