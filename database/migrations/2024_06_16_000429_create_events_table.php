@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('gambar');
             $table->timestamp('mulai');
             $table->timestamp('akhir');
+            $table->string('status')->default(1);
             $table->timestamps();
         });
     }
