@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Event extends Model
 {
     use HasFactory;
+
+    protected $guarded = ['id'];
+
+    public function tickets()
+    {
+        return $this->hasMany(Ticket::class, 'event_id', 'id');
+    }
 }
