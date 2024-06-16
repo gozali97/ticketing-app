@@ -1,66 +1,90 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Technical Test
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Project untuk menyelsaikan technical test interview
 
-## About Laravel
+## Url WEB
+- localhost:8000/admin/login
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Fitur
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   Event
+-   Ticket
+-   Transaksi
+-   Role
+-   Permission
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## User
 
-## Learning Laravel
+- Super Admin
+    - email : superadmin@dev.com
+    - password: password
+- Admin
+  - email : admin@dev.com
+  - password: password
+- Kasir
+    - email : kasir@dev.com
+    - password: password
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Instalasi
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Berikut adalah langkah-langkah untuk menginstal dan menjalankan proyek ini di mesin lokal Anda.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Pastikan Anda telah menginstal PHP, Composer, dan Node.js di mesin Anda sebelum melanjutkan.
 
-## Laravel Sponsors
+### Langkah-langkah Instalasi
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+1. Clone repositori ini ke mesin lokal Anda:
 
-### Premium Partners
+`git clone https://github.com/gozali97/ticketing-app.git`
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+2. Pindah ke direktori proyek:
 
-## Contributing
+`cd ticketing-app`
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+3. Instal dependensi PHP dengan Composer:
 
-## Code of Conduct
+`composer install`
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+4. Instal dependensi JavaScript dengan Node.js:
 
-## Security Vulnerabilities
+`npm install`
+`php artisan migrate:fresh --seed`
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+5. Salin file .env.example ke .env:
 
-## License
+6. Generate key aplikasi:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+`php artisan key:generate`
+
+7. Atur konfigurasi database di file .env sesuai dengan pengaturan mesin lokal Anda.
+
+jangan lupa membuat database terlebih dahulu
+
+8. Jalankan migrasi untuk membuat tabel database:
+
+`php artisan migrate`
+
+9. Jalankan server pengembangan lokal:
+
+`php artisan serve`
+
+dan
+
+`npm run dev`
+
+## API
+Anda diwajibkan login terlebih dahulu unutk mendapatkan token agar bisa akses semua api yang ada, token menggunakan bearer token.
+1. Login
+   url = 127.0.0.1:8000/api/login
+   paramater : 
+            email: superadmin@dev.com
+            password: password
+2. Get Data Event
+    url = 127.0.0.1:8000/api/events
+    parameter :
+        kategori = kategori
+        provinsi = prov
+        tanggal = 2024-09-01
+
+3. Get Data Detail Event
+   url = 127.0.0.1:8000/api/events/detail/2
